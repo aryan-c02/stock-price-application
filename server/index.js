@@ -1,7 +1,7 @@
 import express, { urlencoded } from "express";
 import dotenv from "dotenv";
-import stockRouter from "../rotues/stocks.js"
-import userRouter from "../rotues/user.js";
+import stockRouter from "./rotues/stocks.js"
+import userRouter from "./rotues/user.js";
 const app = express();
 
 
