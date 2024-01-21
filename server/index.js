@@ -4,6 +4,8 @@ import stockRouter from "./rotues/stocks.js"
 import userRouter from "./rotues/user.js";
 const app = express();
 
+// constants
+const PORT = process.env.PORT || 4000;
 
 
 // middlewares;
