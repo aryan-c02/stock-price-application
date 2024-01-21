@@ -13,7 +13,7 @@ app.use(express.json, urlencoded({ extended: true }));
 
 // router
 app.use("/api/stocks", stockRouter);
-app.use("/api/user")
+app.use("/api/user", userRouter);
 
 app.listen(PORT, () => {
     try {
