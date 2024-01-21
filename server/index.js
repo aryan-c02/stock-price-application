@@ -2,10 +2,14 @@ import express, { urlencoded } from "express";
 import dotenv from "dotenv";
 import stockRouter from "./rotues/stocks.js"
 import userRouter from "./rotues/user.js";
-const app = express();
+import ConnectDatabase from "./config/database.js";
+dotenv.config();
+ConnectDatabase();
+
 
 // constants
 const PORT = process.env.PORT || 4000;
+const app = express();
 
 
 // middlewares;
